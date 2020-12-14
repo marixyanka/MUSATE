@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet"  href="Main_CSS.css">
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<title>Главная|Праздничное агентство «Holiday»</title>
+</head>
+<body class = "ui">
+        <div class="Fon"><img src="Лого2.png" class="Logo" id="pocik" onclick="test()">
+            <input class="knopk" type="button" value="Регистрация" onclick="show('block')" /></div>
+    <div id="nav">
+        <div class="menu-item"  >
+            <a href="Orders.html">Заказы </a> 
+            
+        </div>
+        <div class="menu-item">
+            <a href="Main.html">Главная</a>
+        </div>
+        <div class="menu-item" >
+            <a href="About_us.html">О нас</a>
+        </div> 
+    </div>
+    <div onclick="show('none')" id="gray"></div>
+    <div onclick="show2('none')" id="gray2"></div>   
+    <div id="window"  alt="">
+        <div class="form">
+            <img class="close" src="close.png" alt="" onclick="show('none')">
+            <img src="Лого2.png" class="Logo2" id="pocik" onclick="test()">
+                <h2>Регистрация</h2>
+ <form  name="f1" onsubmit="fun1 ()" >
+<input type="text" placeholder="Имя" name="name1" required class="input" >
+<input type="text" placeholder="Фамилия" name="name2" required class="input">
+<input type="email" placeholder="Адрес Электроной Почты" name="email1" required class="input">
+<input type="password" placeholder="Пароль" name="pass1" required class="input">
+<input type="password" placeholder="Подтвердите пароль" required name="pass2" class="input">
+<input type='tel' placeholder="Мобильный телефон" name="tel" required class="input">
+<input type="radio"  name="radio1"> Мужчина <input type="radio" required  name="radio1"> Женщина
+<input type="submit" value="Регистрация" name="sab" class="input" >
+</form>
+        </div>
+    </div>
+<div class="Fon_Wrapper">
+        <div class="wrapper">
+            
+            <input type="radio" name="point" id="slide1" checked>
+            <input type="radio" name="point" id="slide2">
+            <input type="radio" name="point" id="slide3">
+            <input type="radio" name="point" id="slide4">
+            <input type="radio" name="point" id="slide5">
+            <div class="slider">
+                   
+                <div class="slides slide1"><p class="pu1">Свадьбы</p></div>
+                <div class="slides slide2"><p class="pu">Выпускные</p></div>
+                <div class="slides slide3"><p class="pu1">Корпоративы</p></div>
+                <div class="slides slide4"><p class="pu" style="margin-left:40%;">Дни Рождения</p></div>
+                <div class="slides slide5"><p class="pu">Новый год</p></div>
+            </div>
+            <div class="controls">
+                <label for="slide1"></label>
+                <label for="slide2"></label>
+                <label for="slide3"></label>
+                <label for="slide4"></label>
+                <label for="slide5"></label>
+            </div>
+        </div>
+</div>
+
+<div class="begin"><h1>Выбирая нас, вы сможете устроить :</h1></div>
+<div class="all">
+        <div class="text"><h2>Популярные вечеринки</h2></div>
+<div class="info2">
+<div class="foto"><img class="im" style="margin-left:10%;" src="Sweet.jpg"></div>
+<div class="inform"><h3>"CHOCO-SWEETY PARTY"</h3>
+<p>Сладкая шоколадная вечеринка наверняка оставит незабываемое послевкусие в памяти гостей! Ведь шоколад поднимает настроение, прогоняет депрессию и способствует выработке гормонов счастья – отличный способ создать радостное праздничное настроение. Решили устроить гостям путешествие в кондитерский рай? Мы поможем!На входе каждому бесплатная вкусняшка!</p></div>
+</div>
+<div class="info3">
+<div class="inform"><h3>"Helloween PARTY"</h3>
+    <p>Исключительно для любителей ужастиков, дрожи в коленках и мурашек по коже – тематическая вечеринка в стиле Хэллоуин, страшно веселая и ужасно забавная! Оккультные мотивы, потусторонние явления, мистификация, кровавые сюжеты – только не пугайте друзей до икоты, пусть они икают от смеха!<br>Шоколадная вечеринка: праздник для настоящих сластен!<br></p></div>
+
+<div class="foto"><img class="im"style="margin-right:10%;"  src="Helloween.jpg"></div>
+</div>
+<div class="info4">
+<div class="foto"><img class="im"  style="margin-left:10%;"  src="Hero.jpg"></div>
+<div class="inform"><h3>" SUPERHERO PARTY"</h3>
+    <p>Маленькое путешествие в утопию, где добро всегда побеждает, да еще и выступить в роли этого Непобедимого Добра… Такое заманчиво разве что для детей? А вот и нет! Фантастическая вечеринка супергероев – одна из популярнейших тем для взрослых праздников, будь то день рождения или просто встреча друзей. <br>Всем быть в масках!Твоя личность должна быть совершенно секретной! </p></div>
+</div>
+</div>
+<div class="begin"></div>
+<div class="all2">
+       <div class="glav_veduj"><h1>Наши лучшие ведущие</h1></div>
+       <div class="veduj">
+            <div class="foto_op1" onclick="shadow('textt')"><div id="textt"><p class="Name">Данила Поперечный</p>
+            <p class="osn">Видеоблоггер, стендап-комик, видеомейкер, сценарист, мультипликатор в прошлом.А так же покоритель многих женских сердец своими шутками.</p></div></div>
+    <div  class="foto_op2" onclick="shadow('textt2')"><div id="textt2"><p class="Name">Ванечка Ургант</p><p class="osn">российский актёр, шоумен, теле- и радиоведущий, певец, музыкант, композитор, продюсер и сценарист, режиссер. Ведущий программы «Вечерний Ургант» на «Первом канале».
+        </p></div></div>
+    <div  class="foto_op3"onclick="shadow('textt3')"><div id="textt3"><p class="Name">Кулакова Татьяна</p><p class="osn">Прекрасная веселая  девушка,не даст никому скучать,большой опыт работы на сцене,была в КВН-команде «Ой,все!».
+
+        С развитием технологий, уверен, скоро к этому списку прибавятся ведущий-оператор и ведущий-фотограф.</p></div></div>
+    <div  class="foto_op4" onclick="shadow2('textt1')"><div id="textt1"><p class="Name">Макс +100500</p></div></div>
+       </div>
+
+
+        <div class="info">
+        <div class="kontakt2">
+         <ul>Мы предлагаем :
+         <li>Лучших аниматоров </li>
+         <li>Заводных ведущих </li>
+         <li>Музыку на ваш вкус</li>
+         <li>Незабываемые впечатления </li>
+         </ul></div>
+         <div class = "kontakt1">
+            <p class="kontakt">Номер телефона: +375298987626</p>
+             <p class="kontakt">Контакты:</p>
+            <div class="kontakt3">
+            <a href="https://mail.google.com/mail/u/0/#inbox"><img class="im1" src="pochta.png" ></a>
+            <a  href="https://vk.com/marixyanka0602"><img class="im1" src="vk.png"></a>
+            
+            <a  href="https://www.instagram.com/?hl=ru"><img class="im1" src="instagram.png"></a>
+            </div>
+         </div>
+         <div class="mmaps"><p>Наше местоположение</p><img src="maps.png" onclick="show2('block')"></div>
+         <div id="maps"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2351.3467946303567!2d27.56194251582789!3d53.89003978009657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcfda85d590d3%3A0xa2ca4c5a62932c8c!2z0YPQuy4g0JHQtdC70L7RgNGD0YHRgdC60LDRjyAxOSwg0JzQuNC90YHQug!5e0!3m2!1sru!2sby!4v1575224163607!5m2!1sru!2sby" width="500" height="500" frameborder="0" style="border:0;" allowfullscreen=""></iframe></div>
+        </div>
+         <script src="Main_JS.js"></script>
+</body>
+
+</html>
