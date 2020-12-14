@@ -1,0 +1,540 @@
+
+.menu-item {
+    border: 1px solid #742321 ;
+    cursor: pointer;
+    width: 200px;
+    height: 100%;
+    text-align: center;
+    font-family: Impact, fantasy;
+}
+    .menu-item>a{
+        height: 100%;
+    }
+    .menu-item:hover,.menu-item>a:hover {
+       background: #742321;
+       color: #e16984;
+       border: 1px solid #e16984;
+    }
+    #nav
+    {background: #e16984;
+    top: 20px;
+    height: 40px;
+     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+.burger-menu_button{
+    z-index: 100;
+    position: absolute;
+    margin-top:30px;
+  left: 0;
+  border:1px solid #742321;
+    width: 50px;
+    height:50px;
+    border-radius: 50%;
+    background-color: #e16984;
+}
+.burger-menu_button:hover{
+
+filter: brightness(0.7)
+}
+.burger-menu_button_active .burger-menu_lines{
+    background-color: transparent;
+}
+.burger-menu_button_active .burger-menu_lines::before{
+   top:0;
+   transform: rotate(45deg);
+}
+.burger-menu_button_active .burger-menu_lines::after{
+top:0;
+transform: rotate(-45deg);
+}
+
+.burger-menu_lines,.burger-menu_lines::after,.burger-menu_lines::before{
+    position: absolute;
+    width: 35px;
+    height: 5px;
+    background-color: #742321;
+}
+.burger-menu_lines{
+top:50%;
+left:50%;
+transform:  translate(-50%,-50%);
+}
+.burger-menu_lines::before{
+    content: ' ';
+    top:-10px;
+}
+.burger-menu_lines::after{
+    content: ' ';
+    top:10px;
+}
+.burger-menu_nav{
+   margin-top:20px ;
+    padding-top:80px;
+    position: absolute;
+    z-index: 20;
+    display: none;
+    flex-flow: column;
+    height: 100%;
+    background-color: #742321;
+    overflow-y: auto;
+    left: -100%;
+}
+
+.burger-menu_active, .burger-menu_nav{
+left:0}
+.burger-menu_link{
+    padding: 30px;
+    font-family: sans-serif;
+    font-size: 32px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: bold;
+    color: #e16984;
+}
+.burger-menu_link:hover{
+filter: brightness(0.7);
+}
+.burger-menu_overlay{
+    display: none;
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+.burger-menu_active .burger-menu_overlay{
+    display: block;
+}
+.RBSticky {
+    position:fixed;
+    height:auto !important;
+    top:0;
+    z-index:100;
+    border-top:0;
+    margin-top:0;
+}
+.Fon{
+    background-image: url(Fon2.jpg);
+    display: flex ;
+    background-size: cover;
+
+}
+.Logo {
+    margin: auto;
+    width: 220px;
+    height: 200px; 
+    }
+    .ui{
+     background-color: white;
+     margin: 0% ;
+    }
+    div.menu-item a{
+    font-size: 30px;
+    text-align:center;
+    text-decoration: none;
+    color:#fcb9b1;
+    display: block;
+}
+div.menu-item a.pr{
+    color:red;
+}
+hr{
+    border: none; 
+    background-color: #e16984; 
+    color: #e16984;
+    height: 4px; 
+    width: 50%;
+   
+}
+.begin{
+    
+    background-image: url(Fon3.jpg);
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.begin>.text,.begin2>.text,.begin3>.text,.begin4>.text{
+    padding-top: 50px;
+    margin-block-end: 0em;
+    margin-block-start: 0em;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+color:#742321;
+font-weight:bold;
+font-size: 50px;
+text-shadow:0px 0px 0 rgb(240, 128, 128),
+0px -3px 0 rgb(240, 128, 128),
+0px -4px 0 rgb(240, 128, 128),
+0px -5px 0 rgb(240, 128, 128), 
+0px -6px 0 rgb(240, 128, 128),
+0px -7px 6px rgba(0,0,0,0.6),
+0px -7px 1px rgba(0,0,0,0.5),0px 0px 6px rgba(0,0,0,.2);}
+
+
+.Happy1,.Birthday1,.Wedding1,.School1{
+    display:flex;
+    width: 100%;
+    height: auto;
+
+}
+.begin>.Happy,.begin2>.Birthday,.begin3>.Wedding,.begin4>.School{
+    margin-bottom: 30px;
+    margin-left: 30%;
+    width: 40%;
+    height: auto;
+    border-radius: 100px;
+    border: 3px solid #e16984;
+}
+.Text,.Birthday1>.Text,.Wedding1>.Text,.School1>.Text
+{ height:auto;
+    width: 95%;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.747);
+    color: #e16984;
+    border-radius: 50px;
+    border: 3px solid #e16984;
+
+}
+.Text>p,.Text>ul,.Text>li,.new_text,#more2>p,#more4>p,#more3>p,#more5>p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    width:90%;
+    margin:auto;
+}
+#btn,#btn1,#btn2,#btn3{
+
+
+margin-bottom: 10px;
+color:#fcb9b1;
+background-color:#e16984;
+border:1px solid #fcb9b1;
+}
+#btn:hover,#btn1:hover,#btn2:hover,#btn3:hover{
+    color:#e16984;
+   background-color:#fcb9b1;
+   border:1px solid #e16984;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.btnn{
+    text-align: center;
+}
+.Happy1>.Happy_img,.Birthday1>.Birthday_img,.Wedding1>.Wedding_img,.School1>.School_img
+{   
+    height: auto;
+    width: 33%;  
+    margin: 5px;  
+    margin-top:50px;
+}
+.Happy_img>img,.Birthday_img>img,.Wedding_img>img,.School_img>img{
+    width: 100%;
+    padding-bottom: 30px;
+    height: auto;
+    cursor: pointer;
+}
+.Happy_img>img:hover,.Birthday_img>img:hover,.Wedding_img>img:hover,.School_img>img:hover{
+   transform: scale(1.02);
+}
+.begin>.price,.begin2>.price,.begin3>.price,.begin4>.price{
+    margin: auto;
+    margin-top: 20px;
+    width: 200px;
+    height: 50px;
+    background: #e16984;
+    color:#fcb9b1;
+    border:2px solid #fcb9b1;
+    cursor: pointer;
+    text-align: center;
+    font-size: 40px;
+    font-family: Impact, fantasy;
+    
+}
+.begin>.price:hover,.begin2>.price:hover,.begin3>.price:hover,.begin4>.price:hover{
+    transform: scale(1.1);
+    background: #fcb9b1;
+    color:#e16984;
+    border:2px solid #e16984;
+
+}
+#window>#price_school,#window>#price_happy,#window>#price_wedding,#window>#price_birh{
+
+    width: 50%;
+    height: 50%;
+    margin:auto;
+    display: none;
+    position:fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(31, 30, 30, 0.568);
+    z-index: 160;
+}
+#window>#price_school>.price,#window>#price_happy>.price,#window>#price_wedding>.price,#window>#price_birh>.price{
+    width: 33%;
+    height: auto;
+    border:1px solid #fcb9b1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: 1%;
+    background: #fcb9b1;
+}
+#window>#price_school>.price>h2,#window>#price_happy>.price>h2,#window>#price_wedding>.price>h2,#window>#price_birh>.price>h2{
+    width: auto;
+    background-color: black;
+    text-align: center;
+    color: #e16984;
+    padding-top: 0;
+    margin-block-start: 0;
+    font-weight: 300;
+    font-family: Impact, fantasy;
+    
+
+}
+#window>#price_school>.price>ul,#window>#price_happy>.price>ul,#window>#price_wedding>.price>ul,#window>#price_birh>.price>ul{
+
+    width: auto;
+    color:black;
+    font-weight: 100;
+    width: 80%;
+    height: auto;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+}
+#window>#price_school>.price>p,#window>#price_happy>.price>p,#window>#price_wedding>.price>p,#window>#price_birh>.price>p{
+    width: auto;
+    color:#e16984;
+    padding-top:20px;
+    background-color: black;
+    height: 50px;
+    text-align: center;
+    
+    font-weight: 300;
+    font-family: Impact, fantasy;
+
+}
+#window>#price_school>.price>.pp,#window>#price_happy>.price>.pp,#window>#price_wedding>.price>.pp,#window>#price_birh>.price>.pp{
+margin-top: 105px;
+}
+#close,#close2,#close3,#close4{
+    display: none;
+    position: absolute;
+    margin-left: 810px;
+    margin-top: 50px;
+    cursor:pointer;
+    border: 1px solid gray;
+    padding: 2px;
+    background: #e16984;
+    z-index: 1000;
+}
+#close:hover,#close2:hover,#close3:hover,#close4:hover{
+    background: #fff;
+}
+
+.begin2
+{
+    background-image: url(Birthday.jpg);
+    width: 100%;
+    height:auto;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.begin3
+{
+    background-image: url(Married.jpg);
+    width: 100%;
+    height:auto;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.begin4
+{
+    background-image: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5) ),url(School.jpg);
+    width: 100%;
+    height:auto;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#more,#more2,#more3,#more4,#more5,#more6{
+    display: none;
+}
+#window{
+    width: 60%;
+    height: 60% ;
+    margin: auto;
+    z-index: 150;
+    display: none;
+    position:fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+#gray1,#gray2,#gray3,#gray4,#gray5,#gray6,#gray7,#gray8,#gray9,#gray10,#gray11,#gray12,#gray13,#gray14,#gray15,#gray16,#gray17,#gray18,#gray19,#gray20,#gray21,#gray22,#gray23,#gray24,#gray25,#gray26,#gray27,#gray28,#gray29,#gray30{
+    background-color: rgba(1, 1, 1, 0.75);
+    position:fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display:none;
+    z-index: 100;
+}
+#img1,#img2,#img3,#img4,#img5,#img6,#img7,#img8,#img9,#img10,#img11,#img12,#img13,#img14,#img15,#img16,#img17,#img18,#img19,#img20,#img21,#img22,#img23,#img24,#img25,#img26,#img27{
+    width: 70%;
+    height: auto ;
+    margin: auto;
+    display: none;
+    position:fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    }
+    @media (max-width: 600px) {
+        .Happy1,.Birthday1,.Wedding1,.School1{
+            display: block;
+            flex-wrap: nowrap;
+            width: 100%;
+            height: auto;
+            padding-top: 30px;
+         }
+         .Happy1>.Happy_img,.Birthday1>.Birthday_img,.Wedding1>.Wedding_img,.School1>.School_img
+{   margin-top:0;
+    height: auto;
+    width: 90%;  
+    margin-left: 10% ;
+    margin-bottom: 0; 
+}
+.Happy_img>img,.Birthday_img>img,.Wedding_img>img,.School_img>img{
+    width: 90%;
+    height: auto;
+    cursor: pointer;
+}
+.kontakt2{
+    font-size: 10px;
+    width: 10px !important;
+    
+}
+.kontakt{
+    text-align: center;
+    font-size: 10px;
+    width: 70px !important;
+}
+.kontakt3>a>img{
+    height: 20px;
+    width: 20px;
+}
+.kontakt3{
+    margin-left: 20px !important;
+}
+.kontakt1{
+    margin-left: 35% !important;
+    text-align: center;
+}
+.mmaps{
+    font-size: 10px;
+}
+.mmaps>img{
+    height: 30px;
+    width: 30px;
+}
+      }
+      .info
+      {    
+          background: black;
+          height: auto;
+      width: 100% ;
+      display:flex ;
+      }
+      .kontakt1{
+          width: auto;
+          height: auto;
+          margin-left:44%;
+          position: absolute;         
+          margin-top: 1em;
+      }
+      .kontakt3{ 
+          width: auto;
+          height: 40px;
+          display: flex;
+          margin-left: 26px;
+      }
+      .info .kontakt2{
+          width: 300px;
+          height: auto;
+      }
+      .info .kontakt{
+         text-align: center;
+          color: #e16984;
+          width: 150px;
+          height: auto;
+          margin-left: 30px;
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          margin-block-end:0;
+          margin-block-start:0;
+      }
+
+      .kontakt2>ul{
+          color:#e16984;
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          list-style-type: square;
+          list-style-image: url(serdechko2.png);
+      }
+      
+      .im1
+      {   
+          width: 40px;
+          height: 40px;
+          margin: 5px;
+      }       
+         
+    .im1:hover{ 
+    transform: scale(1.1);
+    }
+    #maps{
+        width: 500px;
+        height: 500px;
+        margin: 40px auto;
+        border:1px solid white;
+        z-index: 150;
+        border-radius: 15px;
+        display: none;
+        position:fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        display:none;
+        z-index: 100;   
+    
+}
+.mmaps
+{  position: absolute;
+   
+    width: auto;
+    height: 50px;
+    right: 0;
+    color:#e16984;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100;
+
+}
+.mmaps>img{
+    margin:auto;
+    cursor: pointer;
+    
+}
+.mmaps>img:hover
+{
+transform: scale(1.2);
+}
